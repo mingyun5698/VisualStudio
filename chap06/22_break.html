@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h3>0부터 몇까지 더해야 3000을 넘을까</h3>
+    <hr>
+    <script>
+        var sum = 0, i = 0;
+
+        while(true) {
+            sum += i;
+            i++;
+            if (sum>3000) {
+                break;
+            }
+        }
+        document.write("0부터 " + i + "까지 더하면 3000이 넘고 값은 " + sum + "입니다." );
+    </script>
+    
+</body>
+</html>
