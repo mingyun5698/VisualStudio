@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="test2.css" rel="stylesheet">
+</head>
+<body>
+
+        <p onmouseover="displayHello()">여기를 클릭하세요</p>
+        <p onmouseover="displayHello2()">여기를 클릭하세요</p>
+        <p id="p"></p>
+
+        <script>
+ function displayHello() {
+    var p = document.getElementById('p');
+    p.innerHTML = ""; // 먼저 내용을 비웁니다.
+    p.classList.remove('slideInRight');
+    setTimeout(function() {
+        p.innerHTML = "안녕"; // 애니메이션 실행 전에 내용을 설정합니다.
+        p.classList.add('slideInRight');
+    }, 10); // 애니메이션을 위해 setTimeout 사용
+}
+
+function displayHello2() {
+    var p = document.getElementById('p');
+    p.innerHTML = ""; // 먼저 내용을 비웁니다.
+    p.classList.remove('slideInRight');
+    setTimeout(function() {
+        p.innerHTML = "안녕"; // 애니메이션 실행 전에 내용을 설정합니다.
+        p.classList.add('slideInRight');
+    }, 10); // 애니메이션을 위해 setTimeout 사용
+}
+        </script>
+</body>
+</html>
